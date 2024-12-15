@@ -56,7 +56,7 @@ jobs:
       
     - name: Clone device tree
       run: |
-        git clone https://github.com/whoisgabutuniverseshit/recovery_device_infinix_X6837 -b ${{ env.BRANCH_NAME }} ./device/infinix/X6837
+        git clone https://github.com/hunter2986767/Infinix-Hot-40-Pro-.git -b ${{ env.BRANCH_NAME }} ./device/infinix/X6837
       working-directory: ${{ steps.pwd.outputs.workspace-folder }}
 
     - name: Sync Device Dependencies
