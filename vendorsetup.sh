@@ -35,8 +35,9 @@ export OF_CLOCK_POS=1
 export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
 export CCACHE_MAXSIZE="5G"
-export CCACHE_DIR="~/ccache"
+export CCACHE_DIR="~/ccache" 
 mkdir -p $SCCHE_DIR
+
 
 if [ ! -d ${CCACHE_DIR} ];
 then
