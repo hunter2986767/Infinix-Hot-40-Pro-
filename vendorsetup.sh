@@ -36,7 +36,7 @@ export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
 export CCACHE_MAXSIZE="5G"
 export CCACHE_DIR="~/ccache" 
-mkdir -p $SCCHE_DIR
+export mkdir -p $CCACHE_DIR
 
 
 if [ ! -d ${CCACHE_DIR} ];
