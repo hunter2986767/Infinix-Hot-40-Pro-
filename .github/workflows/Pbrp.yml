@@ -6,7 +6,7 @@ on:
       MANIFEST_BRANCH:
         description: 'TWRP Minimal-Manifest Branch'
         required: true
-        default: ''
+        default: 'twrp-12.1'
         type: choice
         options:
         - twrp-12.1
@@ -15,23 +15,23 @@ on:
       DEVICE_TREE:
         description: 'Custom Recovery Tree' # Your already made Device Tree for TWRP
         required: true
-        default: 'https://github.com/xoo2001/android_twrp_infinix_x6739'
+        default: 'https://github.com/hunter2986767/Infinix-Hot-40-Pro-.git'
       DEVICE_TREE_BRANCH:
         description: 'Custom Recovery Tree Branch' # Your Device Tree Branch, make sure it's right.
         required: true
-        default: 'twrp-12.1'
+        default: 'main'
       DEVICE_PATH:
         description: 'Specify your Device Path' # As is, just like your DEVICE_PATH in your BoardConfig.mk
         required: true
-        default: 'device/infinix/X6739'
+        default: 'device/infinix/X6837'
       DEVICE_NAME:
         description: 'Specify your Device Codename' # As is, just like your PRODUCT_DEVICE in your device tree.
         required: true
-        default: 'X6739'
+        default: 'X6837'
       BUILD_TARGET:
         description: 'Specify your Build Target' # Pick among boot, recovery and vendor_boot
         required: true
-        default: 'recovery'
+        default: 'vendorboot'
         type: choice
         options:
         - boot
