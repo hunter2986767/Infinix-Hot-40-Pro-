@@ -7,6 +7,15 @@
 
 LOCAL_PATH := $(call my-dir)
 
+# Enable dm-verity (used for Android Verified Boot)
+BOARD_KERNEL_CMDLINE += androidboot.veritymode=enforcing
+BOARD_USE_DM_VERITY := true
+
+# Include Keymaster to manage encryption keys
+BOARD_INCLUDE_KEYMASTER := true
+
 ifeq ($(TARGET_DEVICE),Infinix-X6837)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
+
+
